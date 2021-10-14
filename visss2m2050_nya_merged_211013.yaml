@@ -43,5 +43,12 @@ camera:
     TriggerSelector: FrameStart
     TriggerMode: On
     TriggerSource: Line1
-  sshForwarding: "ssh -tt visss@172.22.213.4 DISPLAY=:0 "
-externalTrigger: []
+  sshForwarding: "ssh -o ServerAliveInterval=60 -tt visss@172.20.19.99 DISPLAY=:0 "
+externalTrigger:
+- name: radar
+  address: http://172.20.19.58:8123/ # radar host PC IP (AWI network)
+  interval: 60
+  threshold: -20
+  minMax: min
+  stopOnTimeout: False
+  nBuffer: 5

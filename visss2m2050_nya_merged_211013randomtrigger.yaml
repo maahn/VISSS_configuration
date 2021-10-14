@@ -44,4 +44,11 @@ camera:
     TriggerMode: On
     TriggerSource: Line1
   sshForwarding: "ssh -tt visss@172.22.213.4 DISPLAY=:0 "
-externalTrigger: []
+externalTrigger:
+- name: random
+  address: http://localhost:8123/
+  interval: 10
+  threshold: 5.
+  minMax: min
+  stopOnTimeout: True
+  nBuffer: 5
