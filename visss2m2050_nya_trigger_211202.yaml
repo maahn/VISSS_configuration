@@ -1,6 +1,6 @@
 maxmtu: '9216'
 outdir: /data/nyaalesund
-preset: faster
+preset: veryfast
 quality: 17
 site: NYA
 storagethreads: 2
@@ -42,4 +42,4 @@ externalTrigger:
   threshold: -20
   minMax: min
   stopOnTimeout: False
-  nBuffer: 5
+  nBuffer: 6
