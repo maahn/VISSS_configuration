@@ -42,4 +42,4 @@ externalTrigger:
   threshold: -20
   minMax: min
   stopOnTimeout: False
-  nBuffer: 5
+  nBuffer: 6
