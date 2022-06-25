@@ -10,7 +10,7 @@ liveratio: 70
 querygain: false
 minBrightchange: 20
 camera:
-- name: visss_trigger
+- name: visss_leader
   serialnumber: S1145792
   follower: False
   interface: enp35s0f0
