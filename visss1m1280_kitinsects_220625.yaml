@@ -1,0 +1,64 @@
+maxmtu: '9216'
+outdir: /data/kit
+encoding: "-c:v libx264 -preset veryfast -crf 17 -threads 10 -pix_fmt yuv420p"
+site: KIT
+storagethreads: 1
+fps: 80
+storeallframes: False
+newfileinterval: 600
+liveratio: 40
+querygain: true
+minBrightchange: 30
+camera:
+- name: visss_leader
+  serialnumber: S1145792
+  follower: False
+  interface: enp35s0f0
+  ip: 192.168.100.2
+  mac: 00:01:0D:C3:0F:34
+  teledyneparameters:
+    TestImageSelector: Off
+    fastReadoutMode: Off
+    ExposureMode: Timed
+    ExposureTime: 400
+    GainSelector: DigitalAll
+    Gain: 1
+    TriggerMode: Off
+    AcquisitionFrameRate: 80
+    sensorFpnCorrectionMode: Off
+    autoBrightnessMode: Active
+    autoBrightnessTarget: 140
+    autoBrightnessTargetRangeVariation: 10
+    ExposureAuto: Off
+    GainAuto: Continuous
+    gainAutoMinValue: 1
+    gainAutoMaxValue: 8
+    IO:
+    - LineSelector: Line3
+      outputLineSource: Off
+    - LineSelector: Line4
+      outputLineSource: Off
+- name: visss_follower
+  serialnumber: S1143155
+  follower: False
+  interface: enp35s0f1
+  ip: 192.168.200.2
+  mac: 00:01:0D:C3:04:9F
+  teledyneparameters:
+    TestImageSelector: Off
+    fastReadoutMode: Off
+    ExposureMode: Timed
+    ExposureTime: 400
+    GainSelector: DigitalAll
+    Gain: 1
+    TriggerMode: Off
+    AcquisitionFrameRate: 80
+    sensorFpnCorrectionMode: Off
+    autoBrightnessMode: Active
+    autoBrightnessTarget: 140
+    autoBrightnessTargetRangeVariation: 10
+    ExposureAuto: Off
+    GainAuto: Continuous
+    gainAutoMinValue: 1
+    gainAutoMaxValue: 8
+externalTrigger: []
