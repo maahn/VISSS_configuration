@@ -9,6 +9,8 @@ newfileinterval: 600
 liveratio: 70
 querygain: false
 minBrightchange: 20
+latitude: 38.96
+longitude: -106.99
 camera:
 - name: visss_leader
   serialnumber: S1145792
