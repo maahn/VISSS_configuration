@@ -1,6 +1,6 @@
 maxmtu: '9216'
 outdir: /data/sail
-encoding: "-c:v libx264 -preset veryfast -crf 17 -threads 10"
+encoding: "-c:v libx264 -preset veryfast -crf 13 -threads 10"
 site: GUC
 storagethreads: 1
 fps: 140
