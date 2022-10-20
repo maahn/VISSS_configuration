@@ -1,12 +1,12 @@
 maxmtu: '9216'
-outdir: /data/sail
-encoding: "-c:v libx264 -preset veryfast -crf 15 -threads 10"
-site: GUC
+outdir: /data/sphereCalibration
+encoding: "-c:v libx264 -preset veryfast -crf 10 -threads 10"
+site: SPHERECALIB
 storagethreads: 1
 fps: 140
 storeallframes: False
-newfileinterval: 600
-liveratio: 70
+newfileinterval: 0
+liveratio: 10
 querygain: false
 minBrightchange: 20
 latitude: 38.96
