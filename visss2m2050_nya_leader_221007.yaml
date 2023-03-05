@@ -1,0 +1,49 @@
+maxmtu: '9216'
+outdir: /data/nyaalesund
+encoding: "-c:v libx264 -preset veryfast -crf 15 -threads 8 -pix_fmt yuv420p"
+site: NYA
+storagethreads: 2
+fps: 250
+storeallframes: False
+newfileinterval: 600
+liveratio: 100
+querygain: false
+minBrightchange: 20
+latitude: 78.9
+longitude: 11.9
+camera:
+- name: visss2_leader
+  serialnumber: S1242799
+  follower: False
+  interface: enp4s0
+  ip: 192.168.100.2
+  mac: 00:01:0D:C5:59:C6
+  teledyneparameters:
+    OffsetY: 260
+    OffsetX: 392
+    Width: 1280
+    Height: 1024
+    Gain: 1
+    TestImageSelector: Off
+    ExposureMode: Timed
+    ExposureTime: 120
+    TriggerMode: Off
+    AcquisitionFrameRate: 250
+    IO:
+    - LineSelector: Line3
+      outputLineSource: PulseOnStartofExposure
+      outputLinePulseDuration: 60
+      outputLinePulseDelay: 20
+    - LineSelector: Line4
+      outputLineSource: PulseOnStartofExposure
+      outputLinePulseDuration: 30
+      outputLinePulseDelay: 0
+externalTrigger:
+- name: radar
+  address: http://172.20.19.58:8123/ # radar host PC IP (AWI network)
+  interval: 60
+  threshold: -20
+  minMax: min
+  stopOnTimeout: False
+  nBuffer: 6
+  nightOnly: True
