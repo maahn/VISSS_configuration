@@ -40,7 +40,7 @@ camera:
       outputLinePulseDelay: 0
 externalTrigger:
 - name: radar
-  address: http://172.20.19.58:8123/ # radar host PC IP (AWI network)
+  address: http://172.20.4.201:8123/ # parsevel-pc (MRR) # http://172.20.19.58:8123/ # radar host PC IP (AWI network) 
   interval: 60
   threshold: -20
   minMax: min
