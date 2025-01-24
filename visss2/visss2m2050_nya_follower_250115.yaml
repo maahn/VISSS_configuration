@@ -11,6 +11,7 @@ newfileinterval: 600
 liveratio: 100
 querygain: false
 minBrightchange: 20
+rotateimage: False
 camera:
 - name: visss2_follower
   serialnumber: S1242357
