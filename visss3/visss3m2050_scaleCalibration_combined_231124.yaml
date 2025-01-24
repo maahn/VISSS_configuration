@@ -1,0 +1,60 @@
+maxmtu: '9216'
+outdir: /data/scaleCalibrationHYY
+encoding: "-c:v libx264 -preset veryfast -crf 15 -threads 12 -pix_fmt yuv420p"
+site: HYY
+storagethreads: 1
+fps: 275
+storeallframes: False
+newfileinterval: 600
+liveratio: 100
+querygain: false
+minBrightchange: 20
+latitude: 61.844556
+longitude: 24.289603
+rotateimage: True
+camera:
+- name: visss3_leader
+  serialnumber: H2212557
+  follower: False
+  interface: enp4s0
+  ip: 192.168.100.2
+  mac: 00:01:0D:C6:58:C0
+  teledyneparameters:
+    OffsetY: 260
+    OffsetX: 232
+    Width: 1600
+    Height: 1024
+    Gain: 2
+    TestImageSelector: Off
+    ExposureMode: Timed
+    ExposureTime: 75
+    TriggerMode: Off
+    AcquisitionFrameRate: 275
+    IO:
+    - LineSelector: Line3
+      outputLineSource: PulseOnStartofExposure
+      outputLinePulseDuration: 30
+      outputLinePulseDelay: 20
+    - LineSelector: Line4
+      outputLineSource: PulseOnStartofExposure
+      outputLinePulseDuration: 30
+      outputLinePulseDelay: 0
+- name: visss2_follower
+  serialnumber: H2212528
+  follower: True
+  interface: enp9s0
+  ip: 192.168.200.2
+  mac: 00:01:0D:C6:58:1D
+  teledyneparameters:
+    OffsetY: 260
+    OffsetX: 232
+    Width: 1600
+    Height: 1024
+    Gain: 2
+    TestImageSelector: Off
+    ExposureMode: Timed
+    ExposureTime: 120
+    TriggerSelector: FrameStart
+    TriggerMode: On
+    TriggerSource: Line1
+externalTrigger: []

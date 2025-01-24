@@ -1,0 +1,33 @@
+maxmtu: '9216'
+outdir: /data/hyytiala
+encoding: "-c:v libx264 -preset veryfast -crf 15 -threads 8 -pix_fmt yuv420p"
+site: Hyy
+storagethreads: 2
+fps: 275
+storeallframes: False
+newfileinterval: 600
+liveratio: 100
+querygain: false
+minBrightchange: 20
+latitude: 61.844556
+longitude: 24.289603
+rotateimage: False
+camera:
+- name: visss3_follower
+  serialnumber: H2750517
+  follower: True
+  interface: enp8s0
+  ip: 192.168.100.2
+  mac: 00:01:0D:C5:58:1D
+  teledyneparameters:
+    OffsetY: 260
+    OffsetX: 312
+    Width: 1440
+    Height: 1024
+    Gain: 2
+    TestImageSelector: Off
+    ExposureMode: Timed
+    ExposureTime: 120
+    TriggerMode: On
+    AcquisitionFrameRate: 275
+externalTrigger: []

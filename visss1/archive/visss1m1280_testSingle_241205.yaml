@@ -1,0 +1,44 @@
+maxmtu: '9216'
+outdir: /data/lim
+encoding: "-c:v libx264 -preset veryfast -crf 17 -threads 10"
+site: LIM
+storagethreads: 1
+fps: 140
+storeallframes: False
+newfileinterval: 600
+liveratio: 70
+querygain: false
+minBrightchange: 20
+latitude: 38.96
+longitude: -106.99
+camera:
+- name: visss_leader
+  serialnumber: S1145792
+  follower: False
+  interface: enp35s0f0
+  ip: 172.26.85.226
+  mac: 00:01:0D:C3:0F:34
+  teledyneparameters:
+    TestImageSelector: Off
+    fastReadoutMode: Off
+    ExposureMode: Timed
+    ExposureTime: 200
+    GainSelector: SensorAnalog
+    Gain: 1
+    BlackLevelRaw: 1
+    TriggerMode: Off
+    autoBrightnessMode: Off
+    ExposureAuto: Off
+    GainAuto: Off
+    AcquisitionFrameRate: 140
+    IO:
+    - LineSelector: Line3
+      outputLineSource: PulseOnStartofExposure
+      outputLinePulseDuration: 60
+      outputLinePulseDelay: 40
+    - LineSelector: Line4
+      outputLineSource: PulseOnStartofExposure
+      outputLinePulseDuration: 30
+      outputLinePulseDelay: 0
+    sensorFpnCorrectionMode: Off
+externalTrigger: []
